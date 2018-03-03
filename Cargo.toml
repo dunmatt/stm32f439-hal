@@ -1,0 +1,23 @@
+[package]
+name = "stm32f439-hal"
+description = "embedded-hal imlementation for the stm32f439 crate."
+documentation = "https://docs.rs/stm32f439-hal"
+version = "0.1.0"
+authors = [ "M@ Dunlap <mattdunlap@gmail.com>" ]
+categories = [ "embedded", "hardware-support", "no-std" ]
+keywords = ["embedded-hal", "hal", "stm32-hal", "stm32f4-hal", "stm32f4xx-hal"]
+license = "MIT"
+repository = "https://github.com/dunmatt/stm32f439-hal"
+
+[badges]
+maintenance = { status = "actively-developed" }
+travis-ci = { repository = "dunmatt/stm32f439-hal" }
+
+[dependencies]
+[dependencies.embedded-hal]
+version = "0.1.2"
+
+[dependencies.stm32f439]
+version = "0.1.0"
+
+[features]
