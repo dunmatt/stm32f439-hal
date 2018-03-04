@@ -14,10 +14,21 @@ maintenance = { status = "actively-developed" }
 travis-ci = { repository = "dunmatt/stm32f439-hal" }
 
 [dependencies]
+
+[dependencies.can-utils]
+version = "0.1.4"
+
 [dependencies.embedded-hal]
 version = "0.1.2"
 
 [dependencies.stm32f439]
-version = "0.1.0"
+version = "0.1.1"
+
+[dependencies.nb]
+version = "0.1.1"
+
+# TODO: remove this patch once the CAN HAL is merged into embedded-hal
+[patch.crates-io]
+embedded-hal = { path = "../embedded-hal", features = ["unproven"] }
 
 [features]
